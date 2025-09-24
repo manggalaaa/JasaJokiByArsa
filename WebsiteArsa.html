@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jasa Joki Tugas — JasaCepat</title>
+  <style>
+    /* Reset & font */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;color:#0f172a;background:linear-gradient(180deg,#f8fafc,#eef2ff);padding-bottom:80px}
+    a{color:inherit}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:0 6px 18px rgba(12,18,30,0.08)}
+    h1{font-size:20px;color:#081431}
+    p.lead{color:#334155;margin-top:6px}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(12,18,30,0.06);margin-bottom:18px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center}
+    .hero h2{font-size:26px;color:#061124;margin-bottom:8px}
+    .hero p{color:#475569}
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#0ea5a4;color:white;box-shadow:0 8px 20px rgba(14,165,164,0.18)}
+    .btn-ghost{border:1px solid #cbd5e1;background:transparent;color:#0f172a}
+    .wa-box{background:linear-gradient(135deg,#16a34a,#059669);color:white;padding:12px;border-radius:10px;display:flex;gap:10px;align-items:center;justify-content:center}
+    .service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .service{border-radius:10px;padding:12px;background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid #eef2ff;text-align:center}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .price{padding:14px;border-radius:10px;text-align:center;border:1px solid #e6eef9;background:white}
+    .price h3{margin-bottom:6px;color:#0f172a}
+    .note{font-size:13px;color:#475569;margin-top:8px}
+    .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    ul{margin-top:8px;padding-left:18px}
+    footer{text-align:center;margin-top:22px;color:#94a3b8;font-size:13px}
+    .copyright{font-size:11px;opacity:0.7;margin-top:8px}
+    /* floating WA button */
+    .floating-wa{position:fixed;right:18px;bottom:18px;background:#25D366;color:white;border-radius:999px;padding:14px 16px;box-shadow:0 10px 30px rgba(37,211,102,0.18);display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:700}
+    .small{font-size:12px;color:#6b7280}
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; }
+      .service-list{grid-template-columns:repeat(2,1fr)}
+      .price-grid{grid-template-columns:1fr}
+      .pros-cons{grid-template-columns:1fr}
+      .container{padding:16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">JJ</div>
+        <div>
+          <h1>Jasa Joki Tugas — JasaCepat</h1>
+          <p class="small">Solusi cepat & aman untuk tugas sekolah/kuliah</p>
+        </div>
+      </div>
+      <nav class="small">
+        <span class="small">Hubungi:</span>
+        <strong style="margin-left:8px;">+62 822-2901-5044</strong>
+      </nav>
+    </header>
+
+    <section class="card hero">
+      <div>
+        <h2>Butuh bantuan kerjakan tugas? Serahkan pada kami.</h2>
+        <p class="lead">Kami membantu pengerjaan tugas (PR, laporan, soal, coding, presentasi) dengan proses cepat dan terjangkau. Harga bergantung tingkat kesulitan—cek pilihan di samping atau langsung tanyakan via WhatsApp.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="https://wa.me/6282229015044?text=Halo%20JasaCepat%2C%20saya%20ingin%20tanya%20tentang%20tugas%20yang%20ingin%20dibantu." target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+          <a class="btn btn-ghost" href="#layanan">Lihat Layanan</a>
+        </div>
+
+        <div class="note">🔔 Catatan: Harga final ditentukan setelah melihat tugas. Estimasi harga hanya indikatif.</div>
+      </div>
+
+      <aside>
+        <div class="card wa-box">
+          <div style="text-align:left;">
+            <div style="font-weight:700">Chat WhatsApp</div>
+            <div class="small" style="opacity:0.9;margin-top:6px">+62 822-2901-5044</div>
+          </div>
+          <a href="https://wa.me/6282229015044" target="_blank" rel="noopener" style="color:white;text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.08);font-weight:700">Kirim</a>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <strong>Jam Operasional</strong>
+          <div class="small" style="margin-top:6px;color:#475569">Setiap hari 08:00 — 22:00 (WIB). Di luar jam ini, kirim pesan; akan dibalas secepatnya.</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="layanan" class="card">
+      <h3>Informasi Jasa</h3>
+      <div style="margin-top:8px;color:#344154">
+        <ul>
+          <li>Pengerjaan PR & tugas sekolah (matematika, IPA, bahasa, dll.)</li>
+          <li>Pembuatan makalah & laporan</li>
+          <li>Jasa bantu ujian praktik / latihan (bukan untuk tindakan curang saat ujian berlangsung)</li>
+          <li>Penulisan esai, terjemahan, proofreading</li>
+          <li>Coding / debugging untuk tugas pemrograman</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <strong>Proses kerja (ringkas):</strong>
+        <ol style="margin-top:8px;padding-left:18px;color:#475569">
+          <li>Kirim detail tugas via WhatsApp (soal, deadline, preferensi format).</li>
+          <li>Kami kirim estimasi harga & waktu.</li>
+          <li>Dana transfer / DP (opsional) untuk pengerjaan.</li>
+          <li>Pengerjaan & revisi (sesuai ketentuan).</li>
+          <li>Finalisasi & file dikirim.</li>
+        </ol>
+      </div>
+
+      <div style="margin-top:12px">
+        <strong>Jaminan & kebijakan singkat:</strong>
+        <ul>
+          <li>Revisi terbatas 2 kali untuk penyesuaian minor (selama masih dalam ruang lingkup tugas).</li>
+          <li>Kerahasiaan: materi tidak disebarkan ke pihak ketiga.</li>
+          <li>Tidak melayani tindakan yang melanggar aturan sekolah/kampus (mis. cheat saat ujian berlangsung)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Harga — tergantung tingkat kesulitan</h3>
+      <p class="small">Harga berikut bersifat ilustratif. <strong>Harga final ditentukan setelah kami melihat soal.</strong></p>
+
+      <div class="price-grid">
+        <div class="price">
+          <h3>Mudah</h3>
+          <div style="font-size:22px;font-weight:700">Rp 10.000 — Rp 40.000</div>
+          <div class="note">Contoh: soal latihan singkat, koreksi jawaban, tugas 1-2 halaman sederhana</div>
+        </div>
+
+        <div class="price">
+          <h3>Sedang</h3>
+          <div style="font-size:22px;font-weight:700">Rp 45.000 — Rp 150.000</div>
+          <div class="note">Contoh: makalah singkat, soal pemrograman sederhana, laporan 3–6 halaman</div>
+        </div>
+
+        <div class="price">
+          <h3>Sulit/Kompleks</h3>
+          <div style="font-size:22px;font-weight:700">Rp 160.000 — Rp 1.500.000+</div>
+          <div class="note">Contoh: tugas proyek besar, coding kompleks, riset mendalam, deadline sangat mepet</div>
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:10px;color:#475569">
+        ⚠️ Faktor yang memengaruhi harga: jumlah soal/halaman, tingkat kesulitan, deadline, kebutuhan riset, format pengiriman, serta revisi yang diminta.
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Kelebihan & Kekurangan</h3>
+      <div class="pros-cons">
+        <div>
+          <strong>Kelebihan</strong>
+          <ul>
+            <li>Proses cepat — estimasi & komunikasi via WA.</li>
+            <li>Harga fleksibel sesuai kesulitan.</li>
+            <li>Revisi agar hasil sesuai kebutuhan.</li>
+            <li>Berpengalaman mengerjakan berbagai mata & format.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Kekurangan</strong>
+          <ul>
+            <li>Bukan pengganti proses belajar — gunakan untuk referensi & pemahaman.</li>
+            <li>Beberapa tugas kompleks butuh waktu lebih lama.</li>
+            <li>Kualitas sangat tergantung detail soal yang dikirim.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Pertanyaan Umum (FAQ)</h3>
+      <div style="margin-top:8px">
+        <strong>A: Bagaimana cara pesan?</strong>
+        <div class="small" style="margin-top:6px;color:#475569">Kirim soal & deadline via WhatsApp ke +62 822-2901-5044, kami balas estimasi harga dan waktu.</div>
+
+        <strong style="display:block;margin-top:10px">A: Apakah aman untuk tugas sekolah/kampus?</strong>
+        <div class="small" style="margin-top:6px;color:#475569">Kami menjamin kerahasiaan, namun pengguna bertanggung jawab terhadap kebijakan institusi masing-masing.</div>
+
+        <strong style="display:block;margin-top:10px">A: Bagaimana pembayaran?</strong>
+        <div class="small" style="margin-top:6px;color:#475569">Transfer bank / e-wallet sesuai kesepakatan. DP mungkin diminta untuk pekerjaan besar.</div>
+      </div>
+    </section>
+
+    <footer class="card" style="text-align:left">
+      <div>
+        <strong>Siap mulai?</strong>
+        <p class="small" style="margin-top:6px">Klik tombol WA di bawah untuk konsultasi cepat. Kirim soal (foto/pdf), jelaskan batas waktu, dan preferensi.</p>
+        <div style="margin-top:10px">
+          <a class="btn btn-primary" href="https://wa.me/6282229015044?text=Halo%20JasaCepat%2C%20saya%20ingin%20pesan%20joki%20tugas." target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        </div>
+      </div>
+
+      <div style="margin-top:14px" class="small">Kontak resmi: <strong>+62 822-2901-5044</strong></div>
+
+      <div class="copyright">
+        <span style="font-size:11px">© <span id="year"></span> JasaCepat. </span>
+        <span style="float:right;font-size:11px">Website by <span style="font-weight:700">Gala</span></span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- floating WA button -->
+  <a class="floating-wa" href="https://wa.me/6282229015044?text=Halo%20JasaCepat%2C%20saya%20ingin%20tanya%20tentang%20tugas." target="_blank" rel="noopener">
+    <svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path d="M20.5 3.5L3.5 20.5" stroke="white" stroke-width="0"></path>
+    </svg>
+    Chat WA
+  </a>
+
+  <script>
+    // small JS
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
